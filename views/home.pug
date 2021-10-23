@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+        include ../static/utility.css
+
+block content
+    section#introSection 
+        div Welcome to Ravindra's Dance Academy. 
+        div.small Eat Dance Sleep Repeat.
+    section#missionSection 
+        h2.center Our Mission
+        div.container 
+            div.card
+                h3.center Perfect Dancing
+                div.card-box
+                    div.card-img
+                        img(src='/static/images/mj.png')
+                    div.card-content
+                        p This is the best dance academy to laean perfact dancing.
+            div.card
+                h3.center Dance the way you like
+                div.card-box
+                    div.card-img
+                        img(src='/static/images/solo-girl1.png')
+                    div.card-content
+                        p Here you can learn the dance in certain way that is easier for you.
+            div.card
+                h3.center Expert Training
+                div.card-box
+                    div.card-img
+                        img(src='/static/images/couple.png')
+                    div.card-content
+                        p Here we took experts to train you.
+    section#sponserSection 
+        h2.center Our Sponsers
+        div#sponsers
+            img(src='/static/Logos/global.png', alt="Sponser Image" class='spImage') 
+            img(src='/static/Logos/apple1.png', alt="Sponser Image" class='spImage') 
+            img(src='/static/Logos/google.png', alt="Sponser Image" class='spImage') 
+            img(src='/static/Logos/pt.png', alt="Sponser Image" class='spImage') 
